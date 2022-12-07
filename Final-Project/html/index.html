@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./../styling/style.css">
+    <link rel="stylesheet" href="./../styling/style.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+</head>
+
+<body>
+    <header>Dice Game <i class="fa-solid fa-dice"></i></header>
+    <main>
+        <div class="game-area">
+            <div class="player1" id="player1">
+                <h1>You</h1>
+                <div class="dice" id="dice1">
+                    <img src="./../dice-imgs/dice-1.png" alt="Dice">
+                    <img src="./../dice-imgs/dice-6.png" alt="Dice">
+                </div>
+                <div class="scoreboard">
+                    <div class="round-total">
+                        <h2>Round Total Score</h2>
+                        <p class="score" id="userRound">0</p>
+                    </div>
+
+                    <div class="total-game-score">
+                        <h2>Total Game Score</h2>
+                        <p class="score" id="userTotal">0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="opponent" id="opponent">
+                <h1>Opponent</h1>
+                <div class="dice" id="dice2">
+                    <img src="./../dice-imgs/dice-1.png" alt="Dice">
+                    <img src="./../dice-imgs/dice-6.png" alt="Dice">
+                </div>
+                <div class="scoreboard">
+                    <div class="round-total">
+                        <h2>Round Total Score</h2>
+                        <p class="score" id="opponentRound">0</p>
+                    </div>
+
+                    <div class="total-game-score">
+                        <h2>Total Game Score</h2>
+                        <p class="score" id="opponentTotal">0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-buttons">
+                <button class="roll-dice" id="roll-dice">Roll Dice <i class="fa-solid fa-dice"></i></i></button>
+                <button class="new-game" id="new-game">New Game <i class="fa-solid fa-rotate-right"></i></button>
+                <p class="roundText">Round Number: <span class="roundNumber" id="roundNumber">0</span></p>
+            </div>
+
+            <div class="game-end-pop-up" id="game-end-pop-up" hidden>
+                <div class="game-end-pop-up-content">
+                    <h1 id="winner"></h1>
+                    <h2 id="userScore">User Score:</h2>
+                    <h2 id="opponentScore">Opponent Score:</h2>
+                    <button class="btn" id="playAgain">Play Again</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="./../js/final-project.js" defer></script>
+
+</body>
+
+</html>

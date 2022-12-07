@@ -1,0 +1,215 @@
+.game-area .dice img {
+  width: 75px;
+  margin-bottom: 50px;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  background-color: #fefaf6;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 5px 5px 5px black;
+  font-weight: bolder;
+  font-size: 25px;
+  background-color: black;
+  color: #cbb26a;
+  display: flex;
+  justify-content: center;
+}
+
+.roll-dice,
+.new-game {
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 30px;
+  border: 3px solid black;
+  cursor: pointer;
+  margin-top: 25px;
+  background-color: black;
+  color: #cbb26a;
+
+}
+
+
+.game-buttons,
+p r {
+  font-weight: bolder;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.game-buttons {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+}
+
+main {
+  position: relative;
+  width: 90%;
+  margin: 5% auto;
+  height: 80%;
+}
+
+.game-area {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100%;
+  text-align: center;
+  background-color: #fefaf6;
+}
+
+.roll-dice:hover {
+  background-color: #cbb26a;
+  color: black;
+}
+
+.new-game:hover {
+  background-color: #cbb26a;
+  color: black;
+}
+
+
+
+.score {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.opponent {
+  background-color: #cbb26a;
+  color: black;
+}
+
+.game-area .player1 {
+  background-color: black;
+  color: #cbb26a;
+}
+
+.roundText{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  line-height: 4rem;
+  color: white; 
+  margin-bottom: 50%;
+  /* move text higher up the page */
+
+}
+
+#game-end-pop-up {
+  text-align: center;
+  line-height: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}
+
+#game-end-pop-up .game-end-pop-up-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  border-radius: 30px;
+  background-color: #cbb26a;
+  color: black;
+  border: black 5px solid;
+}
+
+#game-end-pop-up span {
+  color: #fefaf6;
+}
+
+#game-end-pop-up .game-end-pop-up-content button {
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  box-shadow: 5px 5px 5px black;
+  border-radius: 30px;
+  border: 5px solid black;
+  cursor: pointer;
+  margin-top: 25px;
+  background-color: black;
+  color: #cbb26a;
+}
+
+#game-end-pop-up .game-end-pop-up-content button:hover {
+  background-color: #cbb26a;
+  color: black;
+}
+
+.game-end-pop-up {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+/*# sourceMappingURL=style.css.map */

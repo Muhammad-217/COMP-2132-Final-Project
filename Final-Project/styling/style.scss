@@ -1,0 +1,42 @@
+.game-area .dice img {
+    width: 75px;
+    margin-bottom: 50px;
+}
+
+.roll-dice,
+.new-game {
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 30px;
+    border: 3px solid black;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.game-buttons{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+
+main {
+    position: relative;
+    width: 90%;
+    margin: 5% auto;
+    height: 80%;
+}
+
+.game-area {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+    text-align: center;
+    background-color: #fefaf6;
+}
+
+.game-area .player1 {
+    background-color: black;
+    color: #fefaf6;
+}
